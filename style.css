@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTdiZjIxNTUxYmM4NjgzZTk5YTAxN2NiMDc4ZWNiOTE0ZmE5ZWJlYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fSRQtBAzrPokPCItuu/giphy.gif');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0;
+  color: purple;
+}
+
+p {
+  font-size: 24px;
+  color: purple;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-alt-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-alt-text {
+  opacity: 1;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8b00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
